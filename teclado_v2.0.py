@@ -25,14 +25,17 @@ def mapear_caracteres(mensaje):
     #if [(c, cs)  for c in lista for cs in letras if c == cs]:
     #    yield print(True)
     for letra in mensaje:
-        print("letra en mensaje: ",str(letra))
-        for  elemento in range(0, len(letras)):
-            print(letras[elemento])
-            for caracter in range(0, len(elemento)):
-                if letra in letras:
-                    print("encuentra")
-                    return letras[elemento][caracter]
-                #else:
+        print("letra en mensaje: ",letra)
+        for  elemento in range(len(letras)):
+            print("elemento: ",letras[elemento])
+            for caracter in range(len(letras[elemento])):
+                print("caracter: ",letras[elemento][caracter])
+
+                if letra in letras[elemento][caracter]:
+                    print("encontro: ",letras[elemento][caracter])
+                    print(map(lambda caracter: caracter*len(letras[elemento])),letras[elemento])
+                    print((caracter)for caracter * index(letra[elemento][caracter]))
+                else:
                     print("no coincidencia")
 
 
