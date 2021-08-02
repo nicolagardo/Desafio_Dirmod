@@ -33,7 +33,9 @@ def mapear_caracteres(mensaje):
 
                 if letra in letras[elemento][caracter]:
                     print("encontro: ",letras[elemento][caracter])
-                    print(map(lambda caracter: caracter*len(letras[elemento])),letras[elemento])
+                    #print(map(lambda caracter: caracter*len(letras[elemento])),letras[elemento])
+                    
+                    print("indice: ",[elemento][caracter]+1)
                 else:
                     print("no coincidencia")
 
