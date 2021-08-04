@@ -16,6 +16,7 @@ def obtener_clave(val):
 
 print("\n\nTECLADO NUMERICO v3\n")
 resultado =[]
+lista = []
 while(True):
     msj=input("Ingrese un mensaje para codificar: ")
     resultado = mv(msj)
@@ -24,3 +25,8 @@ while(True):
     print(resultado)
 for letra in resultado:
     print(obtener_clave(letra))
+    
+    lista.append(obtener_clave(letra))
+print(lista)
+
+"""en proceso"""
